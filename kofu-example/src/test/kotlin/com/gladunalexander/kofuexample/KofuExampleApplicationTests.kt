@@ -1,16 +1,16 @@
 package com.gladunalexander.kofuexample
 
 import org.junit.Test
-import org.junit.runner.RunWith
-import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.test.context.junit4.SpringRunner
+import org.springframework.context.ConfigurableApplicationContext
 
-@RunWith(SpringRunner::class)
-@SpringBootTest
+
 class KofuExampleApplicationTests {
+
+    private val context: ConfigurableApplicationContext = app.run(profiles = "test")
 
     @Test
     fun contextLoads() {
+        context.beanDefinitionNames.forEach { println(it) }
     }
 
 }
