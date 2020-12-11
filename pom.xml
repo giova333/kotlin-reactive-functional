@@ -13,6 +13,7 @@
         <module>kotlin-webflux-reactive</module>
         <module>ktor-example</module>
         <module>kofu-example</module>
+        <module>kotlin-coroutines</module>
     </modules>
 
 
